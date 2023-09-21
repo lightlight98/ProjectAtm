@@ -44,8 +44,8 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {     
-        cashInHand.text = Cash.ToString();
-        totalMoney.text = Banlance.ToString();
+        cashInHand.text = Cash.ToString("N0");
+        totalMoney.text = Banlance.ToString("N0");
     }
 
     public void ShowPopupBox()
