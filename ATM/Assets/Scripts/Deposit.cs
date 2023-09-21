@@ -45,7 +45,7 @@ public class Deposit : MonoBehaviour
         }
         else 
         {
-            Debug.Log("입금 할 금액이 소지금액보다 큽니다.");
+            GameManager.Instance.ShowPopupBox();
         }
         InputMoney.text = "";
 
@@ -61,7 +61,7 @@ public class Deposit : MonoBehaviour
         }
         else 
         {
-            Debug.Log("차감할 금액이 소지금액보다 큽니다.");
+            GameManager.Instance.ShowPopupBox();
         }
 
         UpdateMoney();

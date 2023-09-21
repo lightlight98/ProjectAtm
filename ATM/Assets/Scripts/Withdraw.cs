@@ -50,7 +50,7 @@ public class Withdraw : MonoBehaviour
         }
         else
         {
-            Debug.Log("출금 할 금액이 소지금액보다 큽니다.");
+            GameManager.Instance.ShowPopupBox();
         }
         OutputMoney.text = "";
 
@@ -66,7 +66,7 @@ public class Withdraw : MonoBehaviour
         }
         else
         {
-            Debug.Log("출금 할 금액이 소지금액보다 큽니다.");
+            GameManager.Instance.ShowPopupBox();
         }
         UpdateMoney();
     }
