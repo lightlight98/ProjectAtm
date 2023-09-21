@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Text totalMoney;
     [SerializeField] private Text cashInHand;
     [SerializeField] private GameObject popUpBox;
-    [SerializeField] private Button closeButton;
+    [SerializeField] private Button closeBtn;
 
     public int Cash { get;  set; }
     public int Banlance { get;  set; }
@@ -34,7 +34,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        closeButton.onClick.AddListener(CloseBtnClick);
+        closeBtn = popUpBox.GetComponentInChildren<Button>();
+        closeBtn.onClick.AddListener(CloseBtnClick);
     }
     void CloseBtnClick() 
     {
@@ -48,7 +49,7 @@ public class GameManager : MonoBehaviour
         totalMoney.text = Banlance.ToString("N0");
     }
 
-    public void ShowPopupBox()
+    public void ShowPopUpBox()
     {
         popUpBox.SetActive(true);
     }

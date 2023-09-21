@@ -45,7 +45,7 @@ public class Deposit : MonoBehaviour
         }
         else 
         {
-            GameManager.Instance.ShowPopupBox();
+            GameManager.Instance.ShowPopUpBox();
         }
         InputMoney.text = "";
 
@@ -61,7 +61,7 @@ public class Deposit : MonoBehaviour
         }
         else 
         {
-            GameManager.Instance.ShowPopupBox();
+            GameManager.Instance.ShowPopUpBox();
         }
 
         UpdateMoney();

@@ -50,7 +50,7 @@ public class Withdraw : MonoBehaviour
         }
         else
         {
-            GameManager.Instance.ShowPopupBox();
+            GameManager.Instance.ShowPopUpBox();
         }
         OutputMoney.text = "";
 
@@ -66,7 +66,7 @@ public class Withdraw : MonoBehaviour
         }
         else
         {
-            GameManager.Instance.ShowPopupBox();
+            GameManager.Instance.ShowPopUpBox();
         }
         UpdateMoney();
     }
